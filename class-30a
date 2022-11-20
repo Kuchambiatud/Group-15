@@ -1,0 +1,4 @@
+#! bin/bash
+# this is my first script
+echo welcome to github
+
