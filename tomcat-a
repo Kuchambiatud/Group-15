@@ -1,0 +1,16 @@
+#!/bin/bash
+#this code is to install tomcat
+apt upgrade
+apt-get install default-jdk
+java -version
+wget https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.70/bin/apache-tomcat-9.0.70.tar.gz
+tar -xzf apache-tomcat-9.0.70.tar.gz
+ls
+sudo mkdir /opt/tomcat
+sudo mv apache-tomcat-9.0.70/* /opt/tomcat/
+
+cd /opt/tomcat/
+ls
+cd conf/
+
+sudo nano tomcat-user.xml
