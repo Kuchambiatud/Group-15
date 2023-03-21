@@ -5,7 +5,7 @@ provider "google" {
 }
 
 resource "google_storage_bucket" "terraform_state" {
-  name = "terraform-state-bucket"
+  name = "terraform-state-buckets"
 }
 provider "google" {
   credentials = file("path/to/credentials.json")
